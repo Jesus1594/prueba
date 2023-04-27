@@ -1,10 +1,12 @@
-
-
+@font-face {
+    font-family: Neue Haas Grotesk Display Pro;
+    src: url(fonts/NeueHaasDisplayThin.ttf);
+}    
 
 .fondo{
 
     position: absolute;
-    width: 1360px;
+    width: 1320px;
     height: 686px;
     padding-right: 40px;
     left: 40px;
@@ -22,6 +24,7 @@
     height: 792px;
     bottom:1px;
     background: url(imgane/iPhone\ X\ Mockup\ 1.png);
+    background-repeat: no-repeat;
     border-radius: 38px;
 
 }
@@ -32,14 +35,12 @@
     position: absolute;
     width: 603px;
     height: 152px;
-    left: 721px;
+    left: 761px;
     top: 167px;
-    
 
 }
 
-.primary_contenido{
-
+h1{
     font-family: 'Neue Haas Grotesk Display Pro';
     font-style: normal;
     font-weight: 400;
@@ -48,6 +49,8 @@
     text-align: center;
     color: #32413D;
 
+    
+
 }
 
 .second{
@@ -55,26 +58,24 @@
     position: absolute;
     width: 549px;
     height: 168px;
-    left: 748px;
+    left: 788px;
     top: 343px;
-    text-align: center;
 
 }
 
-.second_contenido{
-
+p{
 
     font-family: 'Neue Haas Grotesk Display Pro';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 28px;
-    text-align:center;
+    text-align: center;
     letter-spacing: 0.01em;
     color: #32413D;
 
-
 }
+
 
 .boton{
 
@@ -85,7 +86,7 @@
     gap: 10px;
     position: absolute;
     left: 927px;
-    top: 569px;
+    top: 569px; 
     outline: none;
 
 }
@@ -94,6 +95,8 @@
 
     width: 192px;
     height: 65px;
+    top: 579px;
+    left: 947px;
     font-family: 'Neue Haas Grotesk Display Pro';
     font-style: normal;
     font-weight: 400;
@@ -112,7 +115,6 @@
 
 .boton :hover{
 
-    content: 'Shop Now';
     color: black;
     background-color: #ECFF86 ;
     transition: 0.5s;
@@ -122,51 +124,183 @@
 
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:576px) {
     
-    .fondo{
+body{
 
-        width: auto;
-        background: #D9E4EB;
-
-
-    }
-
-
-    .iphone{
-
-        position: absolute;
-        width: 100%;
-        height: 653px;
-        left: 0px;
-        top: 0px;
-        
-        background: url(imgane/iPhone\ X\ Mockup\ 1.png);
-        border-radius: 38px;
-
-
-    }
-    
-    .primary{
-
-        position: absolute;
-        width: 340px;
-        height: 131px;
-        left: 128px;
-        top: 698px;
-
-    }
-
-    .primary_contenido{
-
-        font-family: 'Neue Haas Grotesk Display Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 45px;
-        line-height: 45px;
-        text-align: center;
-        color: #32413D;
-
-    }
+    padding-top: 12rem;
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin: 0;
 
 }
+
+.h_full{
+
+    width: 100%;
+
+}
+
+
+.fondo{
+
+    position: absolute;
+    height: 1004px;
+    width: 376px;
+    left: 0px;
+    top: 191px;
+    right: 0px;
+    bottom: 0px;
+    background: #D9E4EB;
+    display: flex;  
+    flex-direction: column;
+
+}
+
+.iphone{
+
+    position: relative;
+    max-width: 375px;   
+    width: 100%;
+    height: 603px;
+    padding-right: 18rem;
+    top: -191px;   
+    left: -110px;
+    right: 109px;
+    background: url(imgane/iPhone\ X\ Mockup\ 1.png);
+    background-position: left;
+    background-size: cover;
+
+}
+
+.simbolo_medio{
+
+    src: url(imgane/icono.png);
+    width: 70.74px;
+    height: 58.59px;
+    top: 396px;
+    left: 152px;
+
+}
+
+
+.primary{
+
+    position: absolute;
+    width: 340px;
+    height: 131px;
+    left: 18px;
+    right: 18px;
+    top: 507px;
+    bottom: 336px;
+
+}
+
+h1{
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: inherit;
+    font-size: 45px;
+    margin: 0;
+    line-height: 45px;
+    text-align: center;
+    color: #32413D;
+
+}
+
+.second{
+
+    position: absolute;
+    width: 340px;
+    height: 140px;
+    left: 18px;
+    right: 18px;
+    top:663px;
+    bottom: 201px;
+
+}
+p{
+
+    font-family: 'Neue Haas Grotesk Display Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #32413D;
+
+}
+
+.boton{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 341px;
+    height: 49px;
+    top: 856px;
+    left: 22px;
+    right: 13px;
+    bottom: 99px;
+    border-radius: 80px;
+    gap: 10px;
+    position: absolute;
+    
+}
+
+.boton :active{
+
+    color: black;
+    background-color: #ECFF86 ;
+    transition: 0.5s;
+    outline: none;
+    border-color: #ECFF86;
+
+}
+
+.boton_contenido{
+
+   width: 100%;
+   height: 100%;
+
+
+}
+
+
+}
+/* width: 151px;
+    height: 23px;
+    font-family: 'Aeonik Pro TRIAL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    outline: none;*/
+
+
+/*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 20px;
+    gap: 10px;
+    position: absolute;
+    width: 341px;
+    height: 49px;
+    left: 132px;
+    top: 1047px;
+    background: #32413D;
+    border-radius: 80px;
+    outline: none;*/

@@ -1,0 +1,4 @@
+@font-face {
+    font-family: Neue Haas Grotesk Display Pro;
+    src: url("/src/fonts/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayThin.ttf");
+}
