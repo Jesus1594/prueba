@@ -154,10 +154,12 @@ body{
     left: 0px;
     top: 191px;
     right: 0px;
+    right: 0px;
     bottom: 0px;
     background: #D9E4EB;
     display: flex;  
     flex-direction: column;
+    border-radius: 0;
 
 }
 
