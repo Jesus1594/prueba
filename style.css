@@ -3,6 +3,20 @@
     src: url(fonts/NeueHaasDisplayThin.ttf);
 }    
 
+
+body{
+
+    position: absolute;
+
+
+}
+
+.barra{
+
+    overflow: hidden;
+
+}
+
 .fondo{
 
     position: absolute;
@@ -179,13 +193,15 @@ body{
 
 }
 
-.simbolo_medio{
+.simbolo{
 
-    src: url(imgane/icono.png);
-    width: 70.74px;
-    height: 58.59px;
-    top: 396px;
-    left: 152px;
+    background: url(imgane/icono.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 35%;
+    right: 35%;
+    top: 42%;
+    bottom: 45.24%;
 
 }
 
