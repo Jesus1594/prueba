@@ -3,9 +3,6 @@
     src: url(fonts/NeueHaasDisplayThin.ttf);
 } 
 
-@media screen and (min-width: 1024px ) {
-    
-
 body{
 
     position: absolute;
@@ -118,7 +115,6 @@ p{
 }
 
 
-}
 
 .boton_color :hover{
 
@@ -131,22 +127,23 @@ p{
 
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:924px) {
     
 
 .fondo{
 
     position: absolute;
     height: 1004px;
-    max-width: 376px;
     width: 100%;
+    max-height: 1004px;
     left: 0px;
     top: 191px;
     right: 0px;
     bottom: 0px;
+    margin: 0 0;
     background: #D9E4EB;
-    display: grid;  
-    grid-template-rows:6fr 4fr 1fr; 
+    display: grid;
+    grid-template-rows: 6fr 4fr 1fr;
     border-radius: 0;
 
 }
@@ -172,6 +169,7 @@ p{
     background: url(imgane/icono.png);
     position: absolute;
     background-repeat: no-repeat;
+    background-position: top;
     left: 35%;
     right: 35%;
     top: 42%;
@@ -184,11 +182,14 @@ p{
 
     position: absolute;
     display: grid;
-    width: 20.6rem;
-    height: 131px;
-    top: 507px;
+    max-width: 100%;
+    width: 100%;
+    height: 8.2rem;
+    top: 31.7rem;
+    left: 0;
     bottom: 336px;
-    left: 0.5rem;
+    /* align-content: center; */
+    /* padding: 2% 4%;*/
 
 }
 
@@ -209,13 +210,18 @@ h1{
 
     position: absolute;
     display: grid;
-    max-width: 20rem;
-    width: 100%;
+    max-width: 924px;
+    width: auto;
     height: 140px;
     left: 1rem;
-    top:663px;
+    top: 663px;
     bottom: 201px;
+    padding: 2% 4%;
     align-content: center;
+    margin-bottom: 20px;
+    margin-top: 0.1rem;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 p{
@@ -242,9 +248,9 @@ p{
     right: 13px;
     bottom: 99px;
     border-radius: 80px;
-    gap: 10px;
     position: absolute;
-    
+    margin-top: 2.5rem;
+    margin-left: 1rem;
 }
 
 .boton_color{
