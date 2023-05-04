@@ -7,7 +7,22 @@ body{
 
     position: absolute;
     width: 100%;
+    min-height: 100vh;
     height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.container{
+
+    display: flex;
+    /* grid-column: span 9 / span 9; */
+    /* padding: 167px 0 54px; */
+    /* justify-content: end; */
+    flex-direction: column;
+    flex-wrap: wrap;
 
 }
 .fondo{
@@ -15,13 +30,10 @@ body{
     display: grid;
     grid-template-columns: 6fr 4fr;
     max-width: 1440px;
-    width: 100%;
+    width: 95%;
     max-height: 686px;
     height: 100%;
-    margin-left: 40px;
-    margin-top: 108px;
-    margin-right: 40px;
-    margin-bottom: 65px;
+    margin: 108px auto 65px;
     background: #D9E4EB;
     border-radius: 38px;
 
@@ -46,13 +58,6 @@ body{
 
     position: absolute;
     display: grid;
-    max-width: 603px;
-    width: 603px;
-    height: 152px;
-    left: 761px;
-    top: 167px;
-    margin-bottom: 24px;
-
 }
 
 h1{
@@ -70,14 +75,15 @@ h1{
 
 .second{
 
-    position: absolute;
     display: grid;
-    width: 549px;
-    height: 168px;
-    left: 788px;
+    /* width: 100%; */
+    /* height: 168px; */
+    /* left: 788px; */
     top: 343px;
-    margin-top: 2.5rem;
-
+    /* margin-top: 2rem; */
+    margin-top: 15rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 p{
@@ -95,22 +101,29 @@ p{
 
 .boton{
 
-    position: absolute;
-    padding: 10px 20px;
-    width: 191px;
-    height: 43px;
-    left: 967px;
-    top: 677px;
-    background: #32413D;
-    border-radius: 80px;
-    font-family: 'Neue Haas Grotesk Display Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #FFFFFF;
-    order: 0;
+        /* position: absolute; */
+        display: grid;
+        align-items: center;
+        padding: 10px 20px;
+        max-width: 18.8rem;
+        width: 100%;
+        height: 49px;
+        left: 990px;
+        top: 70%;
+        bottom: 99px;
+        background: #32413D;
+        border-radius: 80px;
+        font-family: 'Neue Haas Grotesk Display Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: auto;
+        margin-top: 3rem;
+        order: 0;
+    
 
 }
 
@@ -127,7 +140,7 @@ p{
 
 }
 
-@media screen and (max-width:924px) {
+@media screen and (max-width:1185px) {
     
 
 .fondo{
@@ -229,8 +242,8 @@ p{
     font-family: 'Neue Haas Grotesk Display Pro';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     text-align: center;
     letter-spacing: 0.01em;
     color: #32413D;
@@ -241,7 +254,7 @@ p{
 
     display: grid;
     align-items: center;
-    /* max-width: 18.8rem; */
+    max-width: 18.8rem; 
     width: 100%;
     height: 49px;
     top: 856px;
@@ -252,6 +265,7 @@ p{
     position: absolute;
     margin-top: 2.5rem;
     /* margin-left: 10%;*/
+    margin: auto;
 }
 
 .boton_color{
